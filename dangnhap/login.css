@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+}
+.header{
+    height: 100px;
+    width:100%;
+    display:grid;
+    grid-template-columns:10% 50% 40% ;
+    background: #fff;
+}
+
+.img{
+    height: 100px;
+    width: 100px;
+    margin-left: 30px;
+}
+.menu{
+    margin-top: 39px;
+    margin-bottom: 39px;
+}
+ .menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap:22px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height:5px;
+    color: #DD3333;
+}
+.menu ul li a:hover{
+    border-bottom: 2px solid #DD3333;
+}
+.function{
+    margin-top: 30px;
+    margin-bottom: 39px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+.functionsearch{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.input{
+    border-top: none;
+    border-left:none;
+    border-right: none;
+    height: 40px;
+    width: 300px;
+}
+
+.button{
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    background:#F2DFE3;
+    color: #DD3333;
+    border:1px solid #F2DFE3;
+    height: 40px;
+}
+.button a{ 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #DD3333;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+/* phan front */
+.main{
+    width: 100%;
+    margin-top: 0px;
+    height: 758px;
+    background: #EFEFEF;
+}
+
+.signup-content{
+    border-radius: 30px;
+    max-width:700px;
+    height: 550px;
+    background: #ffff;
+    display:grid;
+    grid-template-columns: auto auto ;
+    color: #222222;
+    display: flex;
+    font-size:13px;
+    line-height:23.4px;
+    padding:50px 0px;
+}
+.form-title{
+    max-width:400px;
+    text-align: center;
+    height: 60px;
+    color:#222222;
+    font-family:Poppins;
+    font-size:30px;
+    font-weight:700;
+    line-height:60px;
+    margin:0px 0px 40px;
+    margin-bottom: 33px;
+   
+}
+.signup-form{
+   
+    height: 452px;
+    color:#222222;
+    max-width: 303px;
+    font-size:13px;
+    line-height:23px;
+    margin:0px 50px;
+    padding:0px 0px 0px 34px;
+}
+.signup-image{
+    
+    max-width: 303px;
+    height: 300px;
+    color:#222222;
+    font-size:13px;
+    line-height:23.4px;
+    margin:50px 30px ;
+    float: right;
+    top: 100px;
+    left: 0px;
+    
+
+}
+
+.register-form{
+    max-width: 303px;
+    height: 379px;
+    color:#222222;
+    font-size:13px;
+    line-height:23.4px;
+}
+.front-input{
+    max-width: 350px;
+    height: 33px;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 6px 30px;
+    background-color:#ffffff;
+    font-family:Poppins;
+    font-size:13.3333px;
+    padding:6px 30px;
+
+}
+
+
+.chatbox{
+  
+    max-width: 303px;
+    height: 50px;
+    color:#222222;
+    display:inline;
+    font-size:13px;
+    line-height:30px;
+
+
+}
+.form-submit{
+   }
+.hinanh2{
+
+    border-radius: 20px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 294px;
+    height: 315px;
+    color:#222222;
+    display:inline;
+    font-size:13px;
+    line-height:23.4px;
+    text-align:cente;
+}
+.form-submit{
+    max-width: 131px;
+    height: 51px;
+    background: floralwhite;
+    background-color:#6dabe4;
+}
+.signup-image-link{
+    position: absolute;
+    width: 163px;
+    height: 22px;
+    left: 750px;
+    top: 555px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #000000;
+
+}
+
+
+
+/* phan footer */
+.footer{
+    width: 100%;
+    background: #F2DFE3;
+    height: 400px;
+}
+.content{
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+    padding-top: 72px;
+    padding-left: 140px;
+    padding-bottom:53px ;
+    padding-right: 52px;
+}
+.content1{ 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 17px;
+    color: #333333;
+}
+
