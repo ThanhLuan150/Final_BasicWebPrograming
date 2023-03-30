@@ -4,7 +4,7 @@
   <title>Detail</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./style/detail1.css">
+  <link rel="stylesheet" href="../style/detail1.css">
   <link rel="stylesheet" href="/bootstrap-5.2.2-dist/css/bootstrap.min.css">
   <script src="/bootstrap-5.2.2-dist/js/jquery.min.js"></script>
   <script src="/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
@@ -34,6 +34,92 @@
     line-height: 19px;
     color: #000000;
 }
+.background{
+    background: #EFEFEF;
+    padding-bottom: 30px;
+    }
+    .backgroundp1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+    }
+    .listproductssp1{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 27px;
+
+      color: #000000;
+
+    }
+
+    .title{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        }
+
+    .list_schools{
+            display: grid ;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap:30px;
+            list-style-type:none;
+    }
+    .item{
+        background: #fff;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .img4{
+        Width:262px;
+        Height:290px;
+        border-radius: 10px 10px 0 0 ;
+    }
+    .informationproductp1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        margin-left: 13px;
+    }
+    .informationproductp2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ED2353;
+        margin-left: 13px;
+    }
+    .button111{
+        margin-bottom:20px;
+        margin-left: 13px;
+    }
+    .bt2{
+        background: #F2DFE3;
+        border-radius: 20px;
+        border: 1px solid  #F2DFE3 ;
+        height:30px;
+        width: 100px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+       
+    }
+    .a1{
+        color: #000000;
+    }
 </style>
 <body>
     <div class="header">
@@ -211,9 +297,56 @@
         <p class="noidung4">Chú ý: Khách hàng làm rách hoặc hư hại phải bồi thường dựa trên giá trị sản phẩm.</p>
       </div>
     </div>
-    <div class="listproductsss">
+    <div class="background">
+      <br>
       <div class="container">
-          <p class="listproductssp1">SẢN PHẨM TƯƠNG TỰ</p>
+          <p class="listproductssp1">SẢN PHẨM GỢI Ý</p>
+          <div class=".list_schools">
+            <div class="container">
+            <br>
+            <?php
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "LISTPRODUCT";
+
+            // Create connection
+            $mysqli = new mysqli($servername, $username, $password, $dbname);
+            if ($mysqli === false) {
+                die("ERROR: Could not connect. " . $mysqli->connect_error);
+            }
+
+            $sql = "SELECT * FROM LISTPRODUCT ";
+            $result = $mysqli->query($sql);
+
+            if ($result->num_rows > 0) {
+                // output data of each row
+            ?>
+                <div class="list_schools">
+                    <?php while ($row = $result->fetch_assoc()) { ?>
+                            <div class="item">
+                                <div class="image11">
+                                    <img class="img4" src="<?php echo $row["img"]; ?>" alt="">
+                                </div>
+                                <br>
+                                <div class="informationproduct">
+                                    <p class="informationproductp1"><?php echo $row["names"]; ?></p>
+                                    <p class="informationproductp2"><?php echo $row["price"]; ?></p>
+                                <div class="button111">
+                                    <button class="bt2"><a class="a1"  href="detail1.php?id=<?php echo $row["id"];?>">Details</a></button>  
+                                    <button class="bt2"><a class="a1" href="orders.php?id=<?php echo $row["id"];?>">Đặt thuê</a></button>
+                                </div>
+                            </div>
+                    </div>
+                <?php  }
+                } else {
+                    echo "Không có kết quả để hiển thị ra";
+                }
+                $mysqli->close();
+                ?>
+            </div>
+        </div>
+        <br>
       </div>
     </div>
     <div class="footer">

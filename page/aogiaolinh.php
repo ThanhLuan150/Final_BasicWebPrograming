@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Áo giao lĩnh</title>
-    <link rel="stylesheet" href="./style/aodoikham.css">
+    <link rel="stylesheet" href="../style/aodoikham.css">
     <link rel="stylesheet" href="/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <script src="/bootstrap-5.2.2-dist/js/jquery.min.js"></script>
     <script src="/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
@@ -63,8 +63,8 @@
                 </div>
             </div>
                 <button class="button"><a  href="themgiohang.php">Giỏ hàng <i class="fa-sharp fa-solid fa-cart-shopping"></i> </a></button>
-                <button class="button"><a  href="signin.php">Đăng nhập</a></button>
-                <button class="button"><a  href="signin.php">Đăng ký</a></button>
+                <button class="button"><a  href="Dangnhap.php">Đăng nhập</a></button>
+                <button class="button"><a  href="Dangky.php">Đăng ký</a></button>
             </div>
         </div>
     </div>

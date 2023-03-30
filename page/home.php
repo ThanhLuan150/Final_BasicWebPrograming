@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="../style/home.css">
     <link rel="stylesheet" href="/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <script src="/bootstrap-5.2.2-dist/js/jquery.min.js"></script>
     <script src="/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
@@ -95,11 +95,73 @@
     .a1{
         color: #000000;
     }
+    * {
+    box-sizing:border-box
+  }
+  h2 {
+    text-align: center;
+  }
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+  }
+  /* Ẩn các slider */
+  .mySlides {
+      display: none;
+  }
+  /* Định dạng nội dung Caption */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+   
+  /* định dạng các chấm chuyển đổi các slide */
+  .dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  /* khi được hover, active đổi màu nền */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+   
+  /* Thêm hiệu ứng khi chuyển đổi các slide */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+   
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+   
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+    
 </style>
 <body>
     <div class="header">
         <div class="image">
-            <a href="home.php"><img class="img" src="./img/logo.jpg" alt=""></a>
+            <a href="home.php"><img class="img" src="../img/logo.jpg" alt=""></a>
         </div>
         <div class="menu">
             <ul>
@@ -136,14 +198,33 @@
                 </div>
             </div>
             <button class="button"><a  href="themgiohang.php">Giỏ hàng <i class="fa-sharp fa-solid fa-cart-shopping"></i> </a></button>
-            <button class="button"><a  href="signin.php">Đăng nhập</a></button>
-            <button class="button"><a  href="signin.php">Đăng ký</a></button>
+            <button class="button"><a  href="Dangnhap.php">Đăng nhập</a></button>
+            <button class="button"><a  href="Dangky.php">Đăng ký</a></button>
         </div>
     </div>
-    <div class="body" style="background-image: url(../page/img/nen.jpg); ">
-        <div class="poster">
-            <img class="img1" src="./img/poster.jpg" alt="">
+    <div class="poster">
+        <div class="mySlides fade">
+            <img class="img1" src="../img/poster.jpg" alt=""style="width:100%">
+            <div class="text">Nội dung caption của slide đầu tiên!</div>
         </div>
+        <div class="mySlides fade">
+            <img class="img1" src="../img/poster.jpg" alt=""style="width:100%">
+            <div class="text">Nội dung caption của slide thứ 2!</div>
+        </div>
+        <div class="mySlides fade">
+            <img class="img1" src="../img/poster.jpg" alt=""style="width:100%">
+            <div class="text">Nội dung caption của slide thứ 3!</div>
+        </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+    </div>
+    <script src="../js/slide.js">
+</script>
+    <div class="body" style="background-image: url(../page/img/nen.jpg); ">
         <div class="introduce">
             <div class="container">
                 <p class="introducep1">Giới thiệu</p>
@@ -162,7 +243,7 @@
                            <a class="a"href="https://www.youtube.com/channel/UCpR0Jjt_57gDN91Qf9UAA8w"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
                     </div>
-                    <img class="img2" src="./img/content.jpg" alt="">
+                    <img class="img2" src="../img/content.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -172,7 +253,7 @@
             <p class="inforproductp">Dịch Vụ Chính Cổ Phục TTDVL</p>
             <p class="inforproductp1">Địa điểm cho thuê - Bán cổ phục các loại giá rẻ - Uy tín - Chất lượng</p>
             <center>
-                <img class="img3" src="../page/img/noidung1.jpg" alt="">
+                <img class="img3" src="../img/noidung1.jpg" alt="">
                 <button class="inforproducbutton" type="submit"><a  style="color:#fff; border-radius:10px;" href="banggiaphucvu.php">THUÊ CỔ PHỤC</a></button>
             </center>
         </div>

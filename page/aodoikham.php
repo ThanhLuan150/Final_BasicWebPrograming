@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Áo đối khâm</title>
-    <link rel="stylesheet" href="./style/aodoikham.css">
+    <link rel="stylesheet" href="../style/aodoikham.css">
     <link rel="stylesheet" href="/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <script src="/bootstrap-5.2.2-dist/js/jquery.min.js"></script>
     <script src="/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
@@ -26,7 +26,7 @@
 <body>
     <div class="header">
         <div class="image">
-            <a href="home.php"><img class="img" src="./img/logo.jpg" alt=""></a>
+            <a href="home.php"><img class="img" src="../img/logo.jpg" alt=""></a>
         </div>
         <div class="menu">
             <ul>
@@ -63,8 +63,8 @@
                 </div>
             </div>
                 <button class="button"><a  href="themgiohang.php">Giỏ hàng <i class="fa-sharp fa-solid fa-cart-shopping"></i> </a></button>
-                <button class="button"><a  href="signin.php">Đăng nhập</a></button>
-                <button class="button"><a  href="signin.php">Đăng ký</a></button>
+                <button class="button"><a  href="Dangky.php">Đăng nhập</a></button>
+                <button class="button"><a  href="Dangnhap.php">Đăng ký</a></button>
             </div>
         </div>
     </div>
@@ -74,7 +74,7 @@
             <p class="titlep1"><i class="fa-solid fa-arrow-left" onclick="javascript:history.go(-1);"></i>  ÁO ĐỐI KHÂM</p>
                 <div class="listmenu">
                     <div class="listmenu1">
-                        <a  href="aodoikham.php" class="listmenu1p1">ÁO ĐỐI KHÂM</a>
+                        <a  href="Productaodoikham.php" class="listmenu1p1">ÁO ĐỐI KHÂM</a>
                         <p class="listmenu1p2">16 sản phâm</p>
                     </div>
                     <div class="listmenu1">
