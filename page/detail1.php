@@ -124,7 +124,7 @@
 <body>
     <div class="header">
         <div class="image">
-            <a href="home.php"><img class="img" src="./img/logo.jpg" alt=""></a>
+            <a href="home.php"><img class="img" src="../img/logo.jpg" alt=""></a>
         </div>
         <div class="menu">
             <ul>
