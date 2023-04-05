@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/header.css">
     <link rel="stylesheet" href="/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <script src="/bootstrap-5.2.2-dist/js/jquery.min.js"></script>
     <script src="/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
@@ -159,49 +160,9 @@
     
 </style>
 <body>
-    <div class="header">
-        <div class="image">
-            <a href="home.php"><img class="img" src="../img/logo.jpg" alt=""></a>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="banggiaphucvu.php">BẢNG GIÁ PHỤC VỤ</a></li>
-                <li><a href="aodoikham.php">ÁO ĐỐI KHÂM</a></li>
-                <li><a href="aogiaolinh.php">ÁO GIAO LĨNH</a></li>
-                <li><a href="aonhatbinh.php">ÁO NHẬT BÌNH</a></li>
-                <li><a href="aotac.php">ÁO TẮC</a></li>
-                <li><a href="aonguthan.php">ÁO NGŨ THÂN</a></li>
-                <li><a href="blog.php">BLOG</a></li>
-                <li><a href="lienhe.php">LIÊN HỆ</a></li>
-            </ul>
-        </div>
-        <div class="function">
-            <div class="functionsearch">
-                <div class="search">
-                    <i  class="fa-sharp fa-solid fa-magnifying-glass" data-toggle="modal" data-target="#myModal"></i>
-                    <div class="modal fade" id="myModal" role="dialog">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Tìm kiếm</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <input class="input" type="search" name="search" value="" placeholder="Nhập từ khóa">
-                                    <button class="button" type="submit" name="submit">Tìm kiếm</button>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="button" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="button"><a  href="themgiohang.php">Giỏ hàng <i class="fa-sharp fa-solid fa-cart-shopping"></i> </a></button>
-            <button class="button"><a  href="Dangnhap.php">Đăng nhập</a></button>
-            <button class="button"><a  href="Dangky.php">Đăng ký</a></button>
-        </div>
-    </div>
+    <?php
+    include 'header.php';
+    ?>
     <div class="poster">
         <div class="mySlides fade">
             <img class="img1" src="../img/poster.jpg" alt=""style="width:100%">
@@ -396,37 +357,8 @@
         </div>
     </div>
     </div>
-    <div class="footer">
-        <div class="content">
-            <div class="content1">
-                <p class="content11">ÁO CỔ PHỤC TTDVL</p>
-                <p class="content11"><i class="fa-solid fa-location-dot"></i>   Chi Nhánh 1: 101b, Lê Hữu Trác , Phước Mỹ, Sơn Trà, Đà Nẵng</p>
-                <p class="content11"><i class="fa-solid fa-phone"></i>   Phone: 0702307677 ( Mr Trung)</p>
-                <p class="content11"><i class="fa-solid fa-location-dot"></i>   Chi Nhánh 2: 99 Tô Hiến Thành, Phước Mỹ, Sơn Trà, Đà Nẵng</p>
-                <p class="content11"><i class="fa-solid fa-phone"></i>   Phone: 0787628654 (Mr Luân)</p>
-                <p class="content11"><i class="fa-solid fa-envelope"></i>   Email: aocophucttdvl@gmail.com</p>
-                <p class="content11"><i class="fa-regular fa-calendar-pen"></i>   Giờ mở cửa: 8h30 đến 21h30 Từ thứ 2 đến Chủ nhật</p>
-            </div>
-            <div class="content1">
-                <p class="content11">DỊCH VỤ CHỤP ẢNH</p>
-                <p class="content11">Bảng giá thuê áo cổ phục</p>
-                <p class="content11">Thuê  áo đối khâm</p>
-                <p class="content11">Thuê áo giao lĩnh</p>
-                <p class="content11">Thuê áo nhật bình</p>
-                <p class="content11">Thuê áo tắc</p>
-                <p class="content11">Thuê áo ngũ thân</p>
-            </div>
-            <div class="content1">
-                <p class="content11">GIỚI THIỆU</p>
-                <p class="content11">Giói thiệu cho thuê áo cổ phục</p>
-                <p class="content11">Áo đối khâm</p>
-                <p class="content11">Áo giao lĩnh</p>
-                <p class="content11">Áo nhật bình</p>
-                <p class="content11">Áo tấc</p>
-                <p class="content11">Áo ngũ thân</p>
-                <p class="Content">Liên hệ</p>
-            </div>
-        </div>
-    </div>
+    <?php
+    include 'footer.php';
+    ?>
 </body>
 </html>
